@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'homepage' %}" >Ce gatim astazi cu ce avem in frigider </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'homepage' %}">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Mic Dejun
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'create-micdejun' %}">Adauga reteta</a></li>
+                            <li><a class="dropdown-item" href="{% url 'list-of-micdejun' %}">Lista retete </a></li>
+                        </ul>
+                    </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Pranz
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'create-pranz' %}">Adauga reteta</a></li>
+                            <li><a class="dropdown-item" href="{% url 'list-of-pranz' %}">Lista retete </a></li>
+                        </ul>
+                    </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Cina
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'create-cina' %}">Adauga reteta</a></li>
+                            <li><a class="dropdown-item" href="{% url 'list-of-cina' %}">Lista retete </a></li>
+                        </ul>
+                    </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Superfoods
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'create-superfoods' %}">Adauga reteta</a></li>
+                            <li><a class="dropdown-item" href="{% url 'list-of-superfoods' %}">Lista retete </a></li>
+                        </ul>
+                    </li>
+
+</nav>

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="container text-center">
+
+            <div class="header">
+                <br><br><br><br>
+                <h1>Rețete de Mâncare</h1>
+                <p>Bucurați-vă de rețetele noastre delicioase pentru micul dejun, prânz, cină și superfoods.</p>
+            </div>
+            <div class="food-images">
+                <!-- Aici adăugați imagini de fundal pentru legume, carne și cereale -->
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <a href="{% url 'list-of-micdejun' %}" class="btn btn-outline-success btn-lg" type="button">Mic
+                    dejun</a>
+                <br><br>
+                <a href="{% url 'list-of-pranz' %}" class="btn btn-outline-success btn-lg" type="button">Pranz</a>
+                <br><br>
+                <a href="{% url 'list-of-cina' %}" class="btn btn-outline-success btn-lg" type="button">Cina</a>
+                <br><br>
+                <a href="{% url 'list-of-superfoods' %}" class="btn btn-outline-success btn-lg"
+                   type="button">Superfoods</a>
+                <br><br>
+            </div>
+        </div>
+    </div>
+{% endblock %}
